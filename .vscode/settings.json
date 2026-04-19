@@ -1,0 +1,16 @@
+{
+    "cSpell.words": [
+        "figsize",
+        "fontsize",
+        "INFY",
+        "numpy",
+        "OHLC",
+        "selectbox",
+        "streamlit",
+        "textprops",
+        "yfinance"
+    ],
+    "cSpell.ignoreWords": [
+        "TATAMOTORS"
+    ]
+}
