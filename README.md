@@ -28,10 +28,15 @@ Charts: TradingView Widgets / Lightweight Charts
 
 API Keys for your AI provider and Financial Data source
 
-Installation
-Clone the repository:
+# Images
+1. <img width="1919" height="571" alt="image" src="https://github.com/user-attachments/assets/4670ee47-ff50-4a17-8b57-41c2e9028a2c" />
+2. <img width="1860" height="745" alt="image" src="https://github.com/user-attachments/assets/5526b041-fa33-4346-8667-05ddcbce5c19" />
+   2.A- <img width="1919" height="888" alt="image" src="https://github.com/user-attachments/assets/8e477e38-5312-4b3f-a21c-9fc61c24a471" />
+3. <img width="1476" height="853" alt="image" src="https://github.com/user-attachments/assets/d6752f54-02e6-4454-9377-34c319eba881" />
+   3.A = <img width="1508" height="868" alt="image" src="https://github.com/user-attachments/assets/cac31d2d-a930-4bd6-9865-ca124a5b961a" />
 
-Bash
+
+# Bash
 git clone https://github.com/adity303/Financial-Stock-Analysis-Chatbot-AI-.git
 cd Financial-Stock-Analysis-Chatbot-AI-
 Install dependencies:
