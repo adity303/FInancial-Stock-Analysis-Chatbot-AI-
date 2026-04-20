@@ -1,32 +1,112 @@
 import feedparser
 from textblob import TextBlob
+from datetime import datetime
 
-def stock_news(company):
-    # Constructs a Google News RSS feed URL for the company’s stock.
-    url = f"https://news.google.com/rss/search?q={company}+stock"
+def stock_news(company, limit=10):
+    """
+    Fetches financial news for a company from Google News RSS.
+    Returns list of news items with sentiment analysis.
+    """
+    url = f"https://news.google.com/rss/search?q={company}+stock+finance"
     feed = feedparser.parse(url)
-    
-    news_list = [] # Initializes an empty list to store processed news items.
-    
-    for entry in feed.entries[:5]: # Iterates through the first 5 news articles
-        title = entry.title # Extracts the title of the news article
-        
-        # TextBlob(title) - analyzes the headline text.
-        sentiment = TextBlob(title).sentiment.polarity  # Analyzes the sentiment of the title using TextBlob
-        
-        # Applying conditions for sentiment analysis (Classifying the mood)
-        if sentiment > 0:
+
+    news_list = []
+
+    for entry in feed.entries[:limit]:
+        title = entry.title
+
+        # Sentiment analysis using TextBlob
+        sentiment = TextBlob(title).sentiment.polarity  # type: ignore[attr-defined]
+
+        if sentiment > 0.1:
             mood = "Positive"
-        elif sentiment < 0:
+            mood_color = "green"
+        elif sentiment < -0.1:
             mood = "Negative"
+            mood_color = "red"
         else:
             mood = "Neutral"
-         
-        # Appending to the list    
+            mood_color = "orange"
+
+        # Parse published date
+        published = entry.get("published", "")
+        if published:
+            try:
+                published_dt = datetime(*entry.published_parsed[:6])
+                published_str = published_dt.strftime("%b %d, %Y %I:%M %p")
+            except:
+                published_str = published
+        else:
+            published_str = "N/A"
+
+        # Extract source from title (Google News format: "Title - Source")
+        source = "Unknown"
+        if " - " in title:
+            parts = title.rsplit(" - ", 1)
+            title_clean = parts[0]
+            source = parts[1] if len(parts) > 1 else "Unknown"
+        else:
+            title_clean = title
+
         news_list.append({
-            "title": title,
+            "title": title_clean,
             "link": entry.link,
-            "sentiment": mood
+            "source": source,
+            "published": published_str,
+            "sentiment": mood,
+            "sentiment_color": mood_color
         })
-        
+
+    return news_list
+
+def get_market_news(limit=10):
+    """
+    Fetches general market/financial news.
+    """
+    url = "https://news.google.com/rss/search?q=stock+market+finance+ investing"
+    feed = feedparser.parse(url)
+
+    news_list = []
+
+    for entry in feed.entries[:limit]:
+        title = entry.title
+        sentiment = TextBlob(title).sentiment.polarity  # type: ignore[attr-defined]
+
+        if sentiment > 0.1:
+            mood = "Positive"
+            mood_color = "green"
+        elif sentiment < -0.1:
+            mood = "Negative"
+            mood_color = "red"
+        else:
+            mood = "Neutral"
+            mood_color = "orange"
+
+        published = entry.get("published", "")
+        if published:
+            try:
+                published_dt = datetime(*entry.published_parsed[:6])
+                published_str = published_dt.strftime("%b %d, %Y %I:%M %p")
+            except:
+                published_str = published
+        else:
+            published_str = "N/A"
+
+        source = "Unknown"
+        if " - " in title:
+            parts = title.rsplit(" - ", 1)
+            title_clean = parts[0]
+            source = parts[1] if len(parts) > 1 else "Unknown"
+        else:
+            title_clean = title
+
+        news_list.append({
+            "title": title_clean,
+            "link": entry.link,
+            "source": source,
+            "published": published_str,
+            "sentiment": mood,
+            "sentiment_color": mood_color
+        })
+
     return news_list

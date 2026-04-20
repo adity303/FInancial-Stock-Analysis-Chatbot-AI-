@@ -4,6 +4,7 @@
         "fontsize",
         "INFY",
         "numpy",
+        "nvidea",
         "OHLC",
         "selectbox",
         "streamlit",

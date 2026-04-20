@@ -114,7 +114,7 @@ elif menu == "Compare":
     hist1 = get_stock_history(ticker1, "6mo")
     hist2 = get_stock_history(ticker2, "6mo")
 
-    st.write("## Closing price comparision (6 months)")
+    st.write("## Closing price comparison (6 months)")
 
     chart_data = {
     ticker1: hist1["Close"],
