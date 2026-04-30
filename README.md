@@ -97,7 +97,20 @@ streamlit run app.py
 ## 📸 Screenshots (Add your images here)
 
 ```
-(Add UI screenshots or chatbot output images)
+(1. <img width="1875" height="774" alt="image" src="https://github.com/user-attachments/assets/b10e50f7-0d3e-4268-ae61-cebeb2ce1ba0" />)
+(2. <img width="1537" height="861" alt="image" src="https://github.com/user-attachments/assets/bdba046b-4435-40d2-918f-fc3aa827ac71" />, <img width="1463" height="749" alt="image" src="https://github.com/user-attachments/assets/c6ec4915-2b70-4800-a7fe-b27a2fd91b87" />)
+(3.<img width="1497" height="752" alt="image" src="https://github.com/user-attachments/assets/f4a3b776-72ab-4d14-9ae5-cc96effac930" />)
+(4. <img width="1507" height="853" alt="image" src="https://github.com/user-attachments/assets/0d5c6b8c-cba9-4880-afb6-a930dc5d33b5" />, <img width="1554" height="854" alt="image" src="https://github.com/user-attachments/assets/3e7aa44b-70ab-4c5b-b359-9d453e77c9d4" />, <img width="1570" height="873" alt="image" src="https://github.com/user-attachments/assets/14c65468-289a-4292-be13-34f4b0f01766" />, <img width="1447" height="837" alt="image" src="https://github.com/user-attachments/assets/f0c81014-1325-4dd8-b259-2e66f5bfefa2" />)
+(4. <img width="1457" height="840" alt="image" src="https://github.com/user-attachments/assets/2b6b4794-1dcf-416a-8cbd-46526969b5c2" />, <img width="1524" height="504" alt="image" src="https://github.com/user-attachments/assets/b5415b45-d504-4c33-88ef-271a6c6158da" />)
+
+ 
+
+
+
+
+
+
+
 ```
 
 ---
