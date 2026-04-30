@@ -1,0 +1,37 @@
+### 🧠 Portfolio Recommendations
+
+**Profile:** Age 30, Medium Risk Tolerance, Budget ₹50,000
+
+Here are three model portfolios tailored for you:
+
+#### Safe Portfolio
+| Asset Class | Allocation % | Amount (₹) |
+|-------------|-------------|------------|
+| Equity | 30.00% | ₹15,000.00 |
+| Debt/FD | 45.00% | ₹22,500.00 |
+| Gold | 15.00% | ₹7,500.00 |
+| Cash | 10.00% | ₹5,000.00 |
+
+#### Moderate Portfolio
+| Asset Class | Allocation % | Amount (₹) |
+|-------------|-------------|------------|
+| Equity | 55.00% | ₹27,500.00 |
+| Debt/FD | 25.00% | ₹12,500.00 |
+| Gold | 10.00% | ₹5,000.00 |
+| Cash | 10.00% | ₹5,000.00 |
+
+#### Aggressive Portfolio
+| Asset Class | Allocation % | Amount (₹) |
+|-------------|-------------|------------|
+| Equity | 75.00% | ₹37,500.00 |
+| Debt/FD | 10.00% | ₹5,000.00 |
+| Gold | 5.00% | ₹2,500.00 |
+| Cash | 10.00% | ₹5,000.00 |
+
+---
+**📌 Key Insights:**
+- **Safe Portfolio** focuses on stability with 30% equity
+- **Moderate Portfolio** offers balanced growth with 55% equity
+- **Aggressive Portfolio** targets higher returns with 75% equity
+
+*Note: These are model allocations. Please consult a financial advisor before investing.*

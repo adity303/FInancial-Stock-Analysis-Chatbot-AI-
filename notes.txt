@@ -1,0 +1,7 @@
+stock.info - It gives company data.
+stock.history - It means company history.  
+What is OHLC? - It is Open, Hgh, Low, Close.
+What is Market Cap? - It is company total value. 
+What is PE Ratio? - It is price to earnings ratio.
+What is volume? - Volume means how many shares traded. 
+

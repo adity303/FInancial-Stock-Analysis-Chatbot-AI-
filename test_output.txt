@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "c:\Users\KIIT\Documents\My Related Documents\Projects for placements\FInancial-Stock-Analysis-Chatbot-AI\chatbot.py", line 6, in <module>
+    from app import generate_portfolio_recommendation
+  File "c:\Users\KIIT\Documents\My Related Documents\Projects for placements\FInancial-Stock-Analysis-Chatbot-AI\app.py", line 4, in <module>
+    from chatbot import chatbot_response
+ImportError: cannot import name 'chatbot_response' from partially initialized module 'chatbot' (most likely due to a circular import) (c:\Users\KIIT\Documents\My Related Documents\Projects for placements\FInancial-Stock-Analysis-Chatbot-AI\chatbot.py)
