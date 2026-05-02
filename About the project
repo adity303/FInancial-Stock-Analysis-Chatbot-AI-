@@ -1,1 +1,52 @@
+Explain the  project archeitecture? 
+Ans - In this project the  project archeitecture looks like as:
+1. Data Source(API like yfinance)
+2. Analysis Layer(Indicators and sentiment) 
+3. Processing layer(Pandas/NumPy)
+4. Chatbot Layer(NLP)
+5. UI Layer(Streamlit/ Flask) 
 
+Complete Mechanism workflow:
+1. User interacts with Chat inputs or buttons
+2. Tools I used are - Streamlit/ Flask UI 
+3. NLP Processing - This is the brain of the chatbot. It includes
+a. Text preprocessing which includes Convert to lowercase, Remove stopwords and Tokenization 
+4. Data Fetching Layer from sources like yfinance and sentiment analysis. 
+
+
+What problems does my ChatBot does? 
+Ans - 1. It helps the user to make data-driven investment decisions. 
+      2. It combines news + helps in technical indicators and also involves in AI. 
+
+3. Why I use chatbot instead of using dashboard? 
+Ans - It provides Natural interaction, Non-technical users can query anything easily, and also provide dynamic Q&A. 
+
+4. How do you fetch and process stock data? 
+Ans - I fetch this by using 
+a. API Call 
+b. Data Cleaning 
+c. Handling missing values
+d. Time-series formatting 
+
+5. How this project makes production level ready? 
+Ans - By installing features like
+a. Authentication
+b. Logging
+c. Monitoring 
+d. Security 
+
+6. How this project deployed? 
+Ans - The project can be deployed by using
+a. Cloud(AWS/ GCP)
+b. Streamlit Cloud / Docker 
+
+7. What if an API fails? 
+Ans - If API fails then I will 
+a. Retry again mechanism 
+b. Try using error handling 
+
+8. If chatbot gives wrong financial advice, then what should  I do? 
+Ans - If this happens then I will, 
+1. Add disclaimer 
+2. Improve Validation 
+3. Avoid direct "buy/sell" suggestions 
